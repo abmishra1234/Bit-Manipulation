@@ -1,0 +1,55 @@
+Introduction to Bit Manipulation
+
+//----------------------
+
+Computer programming tasks that require bit manipulation include:
+
+Low-level device control
+Error detection and correction algorithms
+Data compression
+Encryption algorithms
+Optimization
+
+//----------------------
+
+Operator	Name of operator
+&			Bitwise AND
+|			Bitwise OR
+~			One’s complement / NOT
+^			Bitwise XOR
+<<			Left shift
+>>			Right shift
+
+//------------------------------
+
+Operator	                    Usage
+One’s complement operator		Used to turn a bit on/off
+AND bitwise operator	    	Used to mask particular part of byte
+Left shift bitwise operator		Used to shift the bit to the left
+Right shift bitwise operator	Used to shift the bit to the right
+
+//---------------------------
+
+Introduction to Number Systems
+Number system	Base	Used digits
+Binary			2		0, 1
+Octal			8		0, 1, 2, 3, 4, 5, 6, 7
+Decimal			10		0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Hexadecimal		16		0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+Of all these number systems, decimal and binary are most important for bit manipulation.
+
+//----------------------
+
+What is the binary number system?
+Another number system that became famous after the decimal is the binary number system, 
+which has only two digits, 0 and 1.
+
+If a number system has n digits, we say that the base of the number system is n. 
+So the binary number system can also be called the base-2 number system.
+
+Why does a computer understand binary?
+The simplest explanation would be that a computer is an electrical device, 
+and all electrical devices understand electrical signals, which have only two states.
+
+//-------------day-01 complete-------------
