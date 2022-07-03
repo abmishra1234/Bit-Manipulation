@@ -1,0 +1,69 @@
+Number Of Flips Required To Make a|b Equal to c
+
+Introduction
+In this question, we will flip the bits to make two numbers equal to the third number.
+
+Let’s see how to achieve this using the OR operator.
+
+Problem statement
+We need to write a program with minimum flips to make the two bits’ OR operation equal a number.
+
+Example-1:
+
+Input: a = 2, b = 6, c = 5
+Output: 3
+
+Check my github repositories for solution.
+
+//------------------------------------------
+
+Introduction to NOT
+This lesson introduces the tilde '~' character. 
+This is applied to a single operand and inverts each bit the input operand has.
+
+Syntax: ~a
+
+1 => yields to 0
+0 => yields to 1
+
+Bitwise NOT, Computations, and Examples
+
+Switch Sign of a Number
+
+//-------------------------------------------
+
+Introduction to XOR
+This is an introductory lesson on XOR.
+This operator is same as the XOR gate that we studied in the digital electronics chapter.
+
+Bitwise XOR operator is denoted by ^. When an XOR gate is given with 2 inputs, the corresponding outputs will be:
+
+If two input bits are different, the output is 1.
+In all other cases, it is 0.
+
+For example:
+
+1 ^ 1 => yields to 0.
+0 ^ 0 => yields to 0.
+1 ^ 0 => yields to 1.
+0 ^ 1 => yields to 1.
+
+Syntax: a ^ b
+
+//---------------------------
+
+Bitwise XOR, Computations, and Examples
+Bitwise XOR
+
+See the solution for swap the numbers using ^
+
+struct SwapNumbers {
+	void oper(int &a, int &b)
+	{
+		a = a ^ b;
+		b = b ^ a;
+		a = a ^ b;
+	}
+};
+
+//-------------day-03 complete-------------
