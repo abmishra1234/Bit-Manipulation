@@ -1,0 +1,123 @@
+Why use Bitwise operators?
+In computer programming, a Bitwise operation operates on one or more bit patterns 
+or binary numerals at the bit level.
+
+Advantages#
+They are fast and simple action.
+They are directly supported by the processor.
+They are used to manipulate values for comparisons and calculations.
+Bitwise operations are incredibly simple and faster than arithmetic operations.
+Bitwise algorithms are used to perform operations at bit-level or to manipulate bits in different ways.
+
+Bitwise operations are much faster and are sometimes used to improve the efficiency of a program.
+
+//----------------------------------
+
+Count the Number of Digits in an Integer
+
+How to count the number of digits in an integer
+Given a decimal number, continue dividing the number by ten until it reaches 0 and records the remainder at each step.
+
+The resulting list of remainders is the equivalent place values of the Integer.
+
+for example:
+input: 125
+output: 3
+
+See the solution at the github repositories in CountDigita.cpp
+ 
+//-----------------------
+Problem statement
+Given an integer, return the number of bits present in an integer input.
+
+Solution: Look the file CountBits.cpp in git repositories.
+
+//-----------------------
+
+Problem
+Let’s represent the bits present in the number in an array of integers.
+
+Please check the collectionbits.cpp file on github repositories
+
+//-----------------------------------
+
+Introduction to AND
+
+Bitwise AND is the most commonly used logical Bitwise operator. It is represented by a sign (&).
+
+Syntax: a & b
+ 
+a	b	a & b
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+
+a		b		a & b
+False	False	False
+False	True	False
+True	False	False
+True	True	True
+
+
+//----------------------------
+Bitwise AND, Computations, and Examples
+
+A Bitwise AND is a binary operation that takes two equal-length binary representations 
+and performs the logical AND operation on each pair of the corresponding bits. 
+This is equivalent to multiplying them.
+
+The Bitwise AND operator does the following:
+
+It is a binary operator that takes two numbers.
+When we do Bitwise & of these two numbers, it considers the binary representation of these two numbers.
+Bitwise AND compares bit by bit in binary representation, and whatever binary representation you get, 
+the corresponding integer is returned as an output.
+
+Check the few example code on github now.
+
+//-------------------
+if(n & 1)
+	// Odd
+	
+otherwise Even
+//-------------------
+
+Check if the given number is Power of 2?
+So our challenge here is to write the efficient algorithm that takes an optimal amount of time.
+
+Example-1:
+Input: 4
+Output: true
+
+Example-2:
+input: 12
+output: false
+
+Approach-01
+bool helper(int n) {
+    if (n == 0) {
+        return false;
+    }
+    while (n != 1) {
+        if (n % 2 != 0) {
+            return false;
+        }
+        n >>= 1;
+    }
+    return true;
+}
+
+
+Approach-02:
+
+if( n & n-1) == 0
+it means the n is power of 2
+
+bool isPowerOfTwo(int n) {
+    if(0 == (n & n-1))
+        return true;
+    return false;
+}
+
+//-------------day-02 complete-------------
