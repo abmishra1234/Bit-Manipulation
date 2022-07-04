@@ -29,12 +29,24 @@ struct HD {
 		}
 		cout << "Hamming Distance between two integers is " << distance << endl;
 	}
+	
+	void hammingDistanceNew(int a, int b) {
+		int xorVal = a ^ b;
+		int distance = 0;
+
+		while (xorVal != 0) {
+			++distance;
+			xorVal &= (xorVal - 1);
+		}
+		cout << "Hamming Distance between two integers is " << distance << endl;
+	}	
 
 };
 
 int main() {
 	HD soln;
 	soln.hammingDistance(1, 8);
+	soln.hammingDistanceNew(1, 8);
 
 	return 0;
 }
