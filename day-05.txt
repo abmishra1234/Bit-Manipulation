@@ -1,0 +1,60 @@
+Challenge 1: Single Number
+Solution Hint : Use the ^ bitwise operator and find the number which is one time present in array.
+
+Challenge 2: Missing Number
+Solution Hint : Use the ^ bitwise operator and find the number which is one time present in array.
+
+//---------------------------------
+Find Bit Length of a Number
+int bitsLength(int n) {
+    int bitsCounter = 0;
+    
+    do {
+        ++bitsCounter;
+    } while (n >>= 1);
+    
+     return bitsCounter;
+}
+
+//----------------------
+
+Check If Kth Bit Is Set/Unset
+
+we try to find a bit in the binary representation of a number at the kth position 
+and check if it is set/un-set.
+
+Problem statement:
+Given two positive integers n and k check whether the bit at position k, 
+from the right in the binary representation of n, is set 1 or unset 0.
+
+
+for understanding let's take some example
+
+Input: n=5, k=1
+Output: true , meaning in number n=5 ( it's binary representation is 101)
+so the 1st bit from 
+
+bool helper(int n, int k = 1) {
+	if (n & (1 << (k - 1))) {
+		return true;
+	}
+	return false;
+}
+
+// First set bit position from right
+
+int helper(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    int k = 1;
+    while (true) {
+        if (((n >> (k - 1)) & 1) == 0) {
+            k++;
+        } else {
+            return k;
+        }
+    }
+}
+
+//-------------day-05 complete-------------
